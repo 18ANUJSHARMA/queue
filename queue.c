@@ -74,8 +74,9 @@ int delete(Queue *q)
 {
     if (underflow(q))
     {
-        printf("Underflow\n");
-        return -1;
+        printf("underflow\n");
+        return 0;
+
     }
     int x = q->a[q->F];
     if (q->F == q->R)
